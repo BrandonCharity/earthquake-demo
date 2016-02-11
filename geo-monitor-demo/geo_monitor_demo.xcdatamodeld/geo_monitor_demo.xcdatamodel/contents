@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15D21" minimumToolsVersion="Automatic">
+    <entity name="Earthquake" representedClassName="Earthquake" syncable="YES">
+        <attribute name="location" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="magnitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="occurrenceDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="updated" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="usgsId" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="coordinates" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Position" inverseName="earthquake" inverseEntity="Position" syncable="YES"/>
+    </entity>
+    <entity name="Position" representedClassName="Position" syncable="YES">
+        <attribute name="depth" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="earthquake" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Earthquake" inverseName="coordinates" inverseEntity="Earthquake" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Earthquake" positionX="-18" positionY="27" width="128" height="135"/>
+        <element name="Position" positionX="36" positionY="108" width="128" height="105"/>
+    </elements>
+</model>

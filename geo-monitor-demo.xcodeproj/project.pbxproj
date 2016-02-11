@@ -1,0 +1,799 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5824425B1C6BFE4500A8AB9A /* GeoJsonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5824425A1C6BFE4500A8AB9A /* GeoJsonTests.m */; };
+		5824425F1C6C146F00A8AB9A /* UsgsAgentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5824425E1C6C146F00A8AB9A /* UsgsAgentTests.m */; };
+		582442611C6C14EC00A8AB9A /* EarthquakeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 582442601C6C14EC00A8AB9A /* EarthquakeTests.m */; };
+		582442631C6C150400A8AB9A /* MagnitudeColorCoderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 582442621C6C150400A8AB9A /* MagnitudeColorCoderTests.m */; };
+		582442651C6C152100A8AB9A /* ColorInterpolatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 582442641C6C152100A8AB9A /* ColorInterpolatorTests.m */; };
+		582442671C6C155300A8AB9A /* LayoutConstraintManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 582442661C6C155300A8AB9A /* LayoutConstraintManagerTests.m */; };
+		5899E6291C4CF6BE00E03067 /* EqMapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5899E6281C4CF6BE00E03067 /* EqMapView.xib */; };
+		5899E62C1C4CFCEE00E03067 /* EqAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5899E62B1C4CFCEE00E03067 /* EqAnnotation.m */; };
+		5899E62F1C4D1C2700E03067 /* EqInfoTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5899E62E1C4D1C2700E03067 /* EqInfoTableView.xib */; };
+		5899E6331C4D216500E03067 /* EqInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5899E6311C4D216500E03067 /* EqInfoTableViewCell.m */; };
+		5899E6341C4D216500E03067 /* EqInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5899E6321C4D216500E03067 /* EqInfoTableViewCell.xib */; };
+		5899E6371C4D2BFD00E03067 /* LayoutConstraintManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5899E6361C4D2BFD00E03067 /* LayoutConstraintManager.m */; };
+		5899E63A1C4D4EF900E03067 /* GeoJsonMetaData.m in Sources */ = {isa = PBXBuildFile; fileRef = 5899E6391C4D4EF900E03067 /* GeoJsonMetaData.m */; };
+		58D5B21D1C4AA30F00136668 /* Earthquake+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D5B21A1C4AA30F00136668 /* Earthquake+CoreDataProperties.m */; };
+		58D5B21E1C4AA30F00136668 /* Earthquake.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D5B21C1C4AA30F00136668 /* Earthquake.m */; };
+		58D5B2231C4AA34B00136668 /* Position+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D5B2201C4AA34B00136668 /* Position+CoreDataProperties.m */; };
+		58D5B2241C4AA34B00136668 /* Position.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D5B2221C4AA34B00136668 /* Position.m */; };
+		58D5B2281C4AA42900136668 /* UsgsAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D5B2271C4AA42900136668 /* UsgsAgent.m */; };
+		58D5B22B1C4AA46300136668 /* EqDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D5B22A1C4AA46300136668 /* EqDetailViewController.m */; };
+		58D5B2311C4AA4F100136668 /* EqSummaryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D5B22F1C4AA4F100136668 /* EqSummaryTableViewCell.m */; };
+		58D5B2321C4AA4F100136668 /* EqSummaryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58D5B2301C4AA4F100136668 /* EqSummaryTableViewCell.xib */; };
+		58D5B2351C4AADC900136668 /* EqMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D5B2341C4AADC900136668 /* EqMapViewController.m */; };
+		58D5B2381C4AADEF00136668 /* EqInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D5B2371C4AADEF00136668 /* EqInfoViewController.m */; };
+		58D5B2471C4ABB1600136668 /* GeoJsonFeature.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D5B2461C4ABB1600136668 /* GeoJsonFeature.m */; };
+		58D5B24A1C4ABB4000136668 /* GeoJsonFeatureCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D5B2491C4ABB4000136668 /* GeoJsonFeatureCollection.m */; };
+		58D5B24D1C4ABB7200136668 /* GeoJsonUsgsProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D5B24C1C4ABB7200136668 /* GeoJsonUsgsProperties.m */; };
+		58D5B2531C4ABBBC00136668 /* GeoJsonGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D5B2521C4ABBBC00136668 /* GeoJsonGeometry.m */; };
+		58D5B25E1C4B374800136668 /* GeoJsonKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D5B25D1C4B374800136668 /* GeoJsonKeys.m */; };
+		58D5B2611C4B3B0400136668 /* UsgsKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D5B2601C4B3B0400136668 /* UsgsKeys.m */; };
+		58D5B2651C4B41F000136668 /* GeoJsonToManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D5B2641C4B41F000136668 /* GeoJsonToManagedObject.m */; };
+		58D5B2681C4B439100136668 /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D5B2661C4B439100136668 /* CoreDataManager.m */; };
+		58D5B26D1C4BE6FC00136668 /* ColorInterpolator.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D5B26C1C4BE6FC00136668 /* ColorInterpolator.m */; };
+		58D5B2711C4BEFE600136668 /* MagnitudeColorCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D5B2701C4BEFE600136668 /* MagnitudeColorCoder.m */; };
+		58F4A8551C4A28C700B631EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F4A8541C4A28C700B631EB /* main.m */; };
+		58F4A8581C4A28C700B631EB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F4A8571C4A28C700B631EB /* AppDelegate.m */; };
+		58F4A85E1C4A28C700B631EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58F4A85C1C4A28C700B631EB /* Main.storyboard */; };
+		58F4A8611C4A28C700B631EB /* geo_monitor_demo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 58F4A85F1C4A28C700B631EB /* geo_monitor_demo.xcdatamodeld */; };
+		58F4A8631C4A28C700B631EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58F4A8621C4A28C700B631EB /* Assets.xcassets */; };
+		58F4A8661C4A28C700B631EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58F4A8641C4A28C700B631EB /* LaunchScreen.storyboard */; };
+		58F4A8951C4A2B9600B631EB /* EqSummaryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F4A8941C4A2B9600B631EB /* EqSummaryTableViewController.m */; };
+		F7517A805D7ABB38C8E970A2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54397B4D130E1FBC3E3CE932 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		58F4A86D1C4A28C700B631EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 58F4A8481C4A28C700B631EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 58F4A84F1C4A28C700B631EB;
+			remoteInfo = "geo-monitor-demo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4075584797D3C62C3E8B2B92 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		54397B4D130E1FBC3E3CE932 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5824425A1C6BFE4500A8AB9A /* GeoJsonTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeoJsonTests.m; sourceTree = "<group>"; };
+		5824425E1C6C146F00A8AB9A /* UsgsAgentTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UsgsAgentTests.m; sourceTree = "<group>"; };
+		582442601C6C14EC00A8AB9A /* EarthquakeTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EarthquakeTests.m; sourceTree = "<group>"; };
+		582442621C6C150400A8AB9A /* MagnitudeColorCoderTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagnitudeColorCoderTests.m; sourceTree = "<group>"; };
+		582442641C6C152100A8AB9A /* ColorInterpolatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorInterpolatorTests.m; sourceTree = "<group>"; };
+		582442661C6C155300A8AB9A /* LayoutConstraintManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayoutConstraintManagerTests.m; sourceTree = "<group>"; };
+		5899E6281C4CF6BE00E03067 /* EqMapView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EqMapView.xib; sourceTree = "<group>"; };
+		5899E62A1C4CFCEE00E03067 /* EqAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EqAnnotation.h; sourceTree = "<group>"; };
+		5899E62B1C4CFCEE00E03067 /* EqAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EqAnnotation.m; sourceTree = "<group>"; };
+		5899E62E1C4D1C2700E03067 /* EqInfoTableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EqInfoTableView.xib; sourceTree = "<group>"; };
+		5899E6301C4D216500E03067 /* EqInfoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EqInfoTableViewCell.h; sourceTree = "<group>"; };
+		5899E6311C4D216500E03067 /* EqInfoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EqInfoTableViewCell.m; sourceTree = "<group>"; };
+		5899E6321C4D216500E03067 /* EqInfoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EqInfoTableViewCell.xib; sourceTree = "<group>"; };
+		5899E6351C4D2BFD00E03067 /* LayoutConstraintManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayoutConstraintManager.h; sourceTree = "<group>"; };
+		5899E6361C4D2BFD00E03067 /* LayoutConstraintManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayoutConstraintManager.m; sourceTree = "<group>"; };
+		5899E6381C4D4EF900E03067 /* GeoJsonMetaData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoJsonMetaData.h; sourceTree = "<group>"; };
+		5899E6391C4D4EF900E03067 /* GeoJsonMetaData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeoJsonMetaData.m; sourceTree = "<group>"; };
+		58D5B2191C4AA30F00136668 /* Earthquake+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Earthquake+CoreDataProperties.h"; sourceTree = "<group>"; };
+		58D5B21A1C4AA30F00136668 /* Earthquake+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Earthquake+CoreDataProperties.m"; sourceTree = "<group>"; };
+		58D5B21B1C4AA30F00136668 /* Earthquake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Earthquake.h; sourceTree = "<group>"; };
+		58D5B21C1C4AA30F00136668 /* Earthquake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Earthquake.m; sourceTree = "<group>"; };
+		58D5B21F1C4AA34B00136668 /* Position+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Position+CoreDataProperties.h"; sourceTree = "<group>"; };
+		58D5B2201C4AA34B00136668 /* Position+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Position+CoreDataProperties.m"; sourceTree = "<group>"; };
+		58D5B2211C4AA34B00136668 /* Position.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Position.h; sourceTree = "<group>"; };
+		58D5B2221C4AA34B00136668 /* Position.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Position.m; sourceTree = "<group>"; };
+		58D5B2261C4AA42900136668 /* UsgsAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UsgsAgent.h; sourceTree = "<group>"; };
+		58D5B2271C4AA42900136668 /* UsgsAgent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UsgsAgent.m; sourceTree = "<group>"; };
+		58D5B2291C4AA46300136668 /* EqDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EqDetailViewController.h; sourceTree = "<group>"; };
+		58D5B22A1C4AA46300136668 /* EqDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EqDetailViewController.m; sourceTree = "<group>"; };
+		58D5B22E1C4AA4F100136668 /* EqSummaryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EqSummaryTableViewCell.h; sourceTree = "<group>"; };
+		58D5B22F1C4AA4F100136668 /* EqSummaryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EqSummaryTableViewCell.m; sourceTree = "<group>"; };
+		58D5B2301C4AA4F100136668 /* EqSummaryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EqSummaryTableViewCell.xib; sourceTree = "<group>"; };
+		58D5B2331C4AADC900136668 /* EqMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EqMapViewController.h; sourceTree = "<group>"; };
+		58D5B2341C4AADC900136668 /* EqMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EqMapViewController.m; sourceTree = "<group>"; };
+		58D5B2361C4AADEF00136668 /* EqInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EqInfoViewController.h; sourceTree = "<group>"; };
+		58D5B2371C4AADEF00136668 /* EqInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EqInfoViewController.m; sourceTree = "<group>"; };
+		58D5B2451C4ABB1600136668 /* GeoJsonFeature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoJsonFeature.h; sourceTree = "<group>"; };
+		58D5B2461C4ABB1600136668 /* GeoJsonFeature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeoJsonFeature.m; sourceTree = "<group>"; };
+		58D5B2481C4ABB4000136668 /* GeoJsonFeatureCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoJsonFeatureCollection.h; sourceTree = "<group>"; };
+		58D5B2491C4ABB4000136668 /* GeoJsonFeatureCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeoJsonFeatureCollection.m; sourceTree = "<group>"; };
+		58D5B24B1C4ABB7200136668 /* GeoJsonUsgsProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoJsonUsgsProperties.h; sourceTree = "<group>"; };
+		58D5B24C1C4ABB7200136668 /* GeoJsonUsgsProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeoJsonUsgsProperties.m; sourceTree = "<group>"; };
+		58D5B2511C4ABBBC00136668 /* GeoJsonGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoJsonGeometry.h; sourceTree = "<group>"; };
+		58D5B2521C4ABBBC00136668 /* GeoJsonGeometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeoJsonGeometry.m; sourceTree = "<group>"; };
+		58D5B25C1C4B374800136668 /* GeoJsonKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoJsonKeys.h; sourceTree = "<group>"; };
+		58D5B25D1C4B374800136668 /* GeoJsonKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeoJsonKeys.m; sourceTree = "<group>"; };
+		58D5B25F1C4B3B0400136668 /* UsgsKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UsgsKeys.h; sourceTree = "<group>"; };
+		58D5B2601C4B3B0400136668 /* UsgsKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UsgsKeys.m; sourceTree = "<group>"; };
+		58D5B2631C4B41F000136668 /* GeoJsonToManagedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoJsonToManagedObject.h; sourceTree = "<group>"; };
+		58D5B2641C4B41F000136668 /* GeoJsonToManagedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeoJsonToManagedObject.m; sourceTree = "<group>"; };
+		58D5B2661C4B439100136668 /* CoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataManager.m; sourceTree = "<group>"; };
+		58D5B2671C4B439100136668 /* CoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataManager.h; sourceTree = "<group>"; };
+		58D5B26B1C4BE6FC00136668 /* ColorInterpolator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorInterpolator.h; sourceTree = "<group>"; };
+		58D5B26C1C4BE6FC00136668 /* ColorInterpolator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorInterpolator.m; sourceTree = "<group>"; };
+		58D5B26F1C4BEFE600136668 /* MagnitudeColorCoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagnitudeColorCoder.h; sourceTree = "<group>"; };
+		58D5B2701C4BEFE600136668 /* MagnitudeColorCoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagnitudeColorCoder.m; sourceTree = "<group>"; };
+		58F4A8501C4A28C700B631EB /* geo-monitor-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "geo-monitor-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		58F4A8541C4A28C700B631EB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		58F4A8561C4A28C700B631EB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		58F4A8571C4A28C700B631EB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		58F4A85D1C4A28C700B631EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		58F4A8601C4A28C700B631EB /* geo_monitor_demo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = geo_monitor_demo.xcdatamodel; sourceTree = "<group>"; };
+		58F4A8621C4A28C700B631EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		58F4A8651C4A28C700B631EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		58F4A8671C4A28C700B631EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58F4A86C1C4A28C700B631EB /* geo-monitor-demoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "geo-monitor-demoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		58F4A8721C4A28C700B631EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58F4A8931C4A2B9600B631EB /* EqSummaryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EqSummaryTableViewController.h; sourceTree = "<group>"; };
+		58F4A8941C4A2B9600B631EB /* EqSummaryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EqSummaryTableViewController.m; sourceTree = "<group>"; };
+		7D25E28961525E46C3A94F54 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		58F4A84D1C4A28C700B631EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7517A805D7ABB38C8E970A2 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58F4A8691C4A28C700B631EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5899E62D1C4D13AC00E03067 /* map-models */ = {
+			isa = PBXGroup;
+			children = (
+				5899E62A1C4CFCEE00E03067 /* EqAnnotation.h */,
+				5899E62B1C4CFCEE00E03067 /* EqAnnotation.m */,
+			);
+			name = "map-models";
+			sourceTree = "<group>";
+		};
+		58D5B2181C4A9C0900136668 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				58D5B2621C4B41A600136668 /* helpers */,
+				58D5B2441C4ABAC100136668 /* agent-models */,
+				58D5B2431C4ABAB500136668 /* database-models */,
+				5899E62D1C4D13AC00E03067 /* map-models */,
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
+		58D5B2251C4AA3F000136668 /* agents */ = {
+			isa = PBXGroup;
+			children = (
+				58D5B2261C4AA42900136668 /* UsgsAgent.h */,
+				58D5B2271C4AA42900136668 /* UsgsAgent.m */,
+			);
+			name = agents;
+			sourceTree = "<group>";
+		};
+		58D5B22C1C4AA48300136668 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				58D5B22D1C4AA4D800136668 /* cells */,
+				5899E6281C4CF6BE00E03067 /* EqMapView.xib */,
+				5899E62E1C4D1C2700E03067 /* EqInfoTableView.xib */,
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
+		58D5B22D1C4AA4D800136668 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				58D5B22E1C4AA4F100136668 /* EqSummaryTableViewCell.h */,
+				58D5B22F1C4AA4F100136668 /* EqSummaryTableViewCell.m */,
+				58D5B2301C4AA4F100136668 /* EqSummaryTableViewCell.xib */,
+				5899E6301C4D216500E03067 /* EqInfoTableViewCell.h */,
+				5899E6311C4D216500E03067 /* EqInfoTableViewCell.m */,
+				5899E6321C4D216500E03067 /* EqInfoTableViewCell.xib */,
+			);
+			name = cells;
+			sourceTree = "<group>";
+		};
+		58D5B2431C4ABAB500136668 /* database-models */ = {
+			isa = PBXGroup;
+			children = (
+				58D5B21F1C4AA34B00136668 /* Position+CoreDataProperties.h */,
+				58D5B2201C4AA34B00136668 /* Position+CoreDataProperties.m */,
+				58D5B2211C4AA34B00136668 /* Position.h */,
+				58D5B2221C4AA34B00136668 /* Position.m */,
+				58D5B2191C4AA30F00136668 /* Earthquake+CoreDataProperties.h */,
+				58D5B21A1C4AA30F00136668 /* Earthquake+CoreDataProperties.m */,
+				58D5B21B1C4AA30F00136668 /* Earthquake.h */,
+				58D5B21C1C4AA30F00136668 /* Earthquake.m */,
+			);
+			name = "database-models";
+			sourceTree = "<group>";
+		};
+		58D5B2441C4ABAC100136668 /* agent-models */ = {
+			isa = PBXGroup;
+			children = (
+				58D5B25B1C4B370900136668 /* helpers */,
+				58D5B2451C4ABB1600136668 /* GeoJsonFeature.h */,
+				58D5B2461C4ABB1600136668 /* GeoJsonFeature.m */,
+				58D5B2481C4ABB4000136668 /* GeoJsonFeatureCollection.h */,
+				58D5B2491C4ABB4000136668 /* GeoJsonFeatureCollection.m */,
+				58D5B24B1C4ABB7200136668 /* GeoJsonUsgsProperties.h */,
+				58D5B24C1C4ABB7200136668 /* GeoJsonUsgsProperties.m */,
+				58D5B2511C4ABBBC00136668 /* GeoJsonGeometry.h */,
+				58D5B2521C4ABBBC00136668 /* GeoJsonGeometry.m */,
+				5899E6381C4D4EF900E03067 /* GeoJsonMetaData.h */,
+				5899E6391C4D4EF900E03067 /* GeoJsonMetaData.m */,
+			);
+			name = "agent-models";
+			sourceTree = "<group>";
+		};
+		58D5B25B1C4B370900136668 /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				58D5B25C1C4B374800136668 /* GeoJsonKeys.h */,
+				58D5B25D1C4B374800136668 /* GeoJsonKeys.m */,
+				58D5B25F1C4B3B0400136668 /* UsgsKeys.h */,
+				58D5B2601C4B3B0400136668 /* UsgsKeys.m */,
+			);
+			name = helpers;
+			sourceTree = "<group>";
+		};
+		58D5B2621C4B41A600136668 /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				58D5B2631C4B41F000136668 /* GeoJsonToManagedObject.h */,
+				58D5B2641C4B41F000136668 /* GeoJsonToManagedObject.m */,
+			);
+			name = helpers;
+			sourceTree = "<group>";
+		};
+		58D5B26A1C4BE6D600136668 /* utilities */ = {
+			isa = PBXGroup;
+			children = (
+				58D5B26B1C4BE6FC00136668 /* ColorInterpolator.h */,
+				58D5B26C1C4BE6FC00136668 /* ColorInterpolator.m */,
+				5899E6351C4D2BFD00E03067 /* LayoutConstraintManager.h */,
+				5899E6361C4D2BFD00E03067 /* LayoutConstraintManager.m */,
+			);
+			name = utilities;
+			sourceTree = "<group>";
+		};
+		58D5B26E1C4BEFD600136668 /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				58D5B26F1C4BEFE600136668 /* MagnitudeColorCoder.h */,
+				58D5B2701C4BEFE600136668 /* MagnitudeColorCoder.m */,
+			);
+			name = helpers;
+			sourceTree = "<group>";
+		};
+		58F4A8471C4A28C700B631EB = {
+			isa = PBXGroup;
+			children = (
+				58F4A8521C4A28C700B631EB /* geo-monitor-demo */,
+				58F4A86F1C4A28C700B631EB /* geo-monitor-demoTests */,
+				58F4A8511C4A28C700B631EB /* Products */,
+				5F6DAF779D028A25F03F3660 /* Pods */,
+				A3DE66BDA3FB658E429D1534 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		58F4A8511C4A28C700B631EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				58F4A8501C4A28C700B631EB /* geo-monitor-demo.app */,
+				58F4A86C1C4A28C700B631EB /* geo-monitor-demoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		58F4A8521C4A28C700B631EB /* geo-monitor-demo */ = {
+			isa = PBXGroup;
+			children = (
+				58D5B2251C4AA3F000136668 /* agents */,
+				58F4A8921C4A2B8200B631EB /* controllers */,
+				58F4A8911C4A29B400B631EB /* database */,
+				58D5B2181C4A9C0900136668 /* models */,
+				58D5B26A1C4BE6D600136668 /* utilities */,
+				58D5B22C1C4AA48300136668 /* views */,
+				58F4A8561C4A28C700B631EB /* AppDelegate.h */,
+				58F4A8571C4A28C700B631EB /* AppDelegate.m */,
+				58F4A85C1C4A28C700B631EB /* Main.storyboard */,
+				58F4A8621C4A28C700B631EB /* Assets.xcassets */,
+				58F4A8641C4A28C700B631EB /* LaunchScreen.storyboard */,
+				58F4A8671C4A28C700B631EB /* Info.plist */,
+				58F4A8531C4A28C700B631EB /* Supporting Files */,
+			);
+			path = "geo-monitor-demo";
+			sourceTree = "<group>";
+		};
+		58F4A8531C4A28C700B631EB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				58F4A8541C4A28C700B631EB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		58F4A86F1C4A28C700B631EB /* geo-monitor-demoTests */ = {
+			isa = PBXGroup;
+			children = (
+				582442641C6C152100A8AB9A /* ColorInterpolatorTests.m */,
+				582442601C6C14EC00A8AB9A /* EarthquakeTests.m */,
+				5824425A1C6BFE4500A8AB9A /* GeoJsonTests.m */,
+				582442661C6C155300A8AB9A /* LayoutConstraintManagerTests.m */,
+				582442621C6C150400A8AB9A /* MagnitudeColorCoderTests.m */,
+				5824425E1C6C146F00A8AB9A /* UsgsAgentTests.m */,
+				58F4A8721C4A28C700B631EB /* Info.plist */,
+			);
+			path = "geo-monitor-demoTests";
+			sourceTree = "<group>";
+		};
+		58F4A8911C4A29B400B631EB /* database */ = {
+			isa = PBXGroup;
+			children = (
+				58D5B2671C4B439100136668 /* CoreDataManager.h */,
+				58D5B2661C4B439100136668 /* CoreDataManager.m */,
+				58F4A85F1C4A28C700B631EB /* geo_monitor_demo.xcdatamodeld */,
+			);
+			name = database;
+			sourceTree = "<group>";
+		};
+		58F4A8921C4A2B8200B631EB /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				58D5B26E1C4BEFD600136668 /* helpers */,
+				58F4A8931C4A2B9600B631EB /* EqSummaryTableViewController.h */,
+				58F4A8941C4A2B9600B631EB /* EqSummaryTableViewController.m */,
+				58D5B2291C4AA46300136668 /* EqDetailViewController.h */,
+				58D5B22A1C4AA46300136668 /* EqDetailViewController.m */,
+				58D5B2331C4AADC900136668 /* EqMapViewController.h */,
+				58D5B2341C4AADC900136668 /* EqMapViewController.m */,
+				58D5B2361C4AADEF00136668 /* EqInfoViewController.h */,
+				58D5B2371C4AADEF00136668 /* EqInfoViewController.m */,
+			);
+			name = controllers;
+			sourceTree = "<group>";
+		};
+		5F6DAF779D028A25F03F3660 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4075584797D3C62C3E8B2B92 /* Pods.debug.xcconfig */,
+				7D25E28961525E46C3A94F54 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A3DE66BDA3FB658E429D1534 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				54397B4D130E1FBC3E3CE932 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		58F4A84F1C4A28C700B631EB /* geo-monitor-demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58F4A8801C4A28C700B631EB /* Build configuration list for PBXNativeTarget "geo-monitor-demo" */;
+			buildPhases = (
+				69D574460EF2F521729F1F65 /* Check Pods Manifest.lock */,
+				58F4A84C1C4A28C700B631EB /* Sources */,
+				58F4A84D1C4A28C700B631EB /* Frameworks */,
+				58F4A84E1C4A28C700B631EB /* Resources */,
+				CF9DF4E854EEE06BE1CA0B72 /* Embed Pods Frameworks */,
+				BA56BF2E8BF1F600FEDBB6D5 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "geo-monitor-demo";
+			productName = "geo-monitor-demo";
+			productReference = 58F4A8501C4A28C700B631EB /* geo-monitor-demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		58F4A86B1C4A28C700B631EB /* geo-monitor-demoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58F4A8831C4A28C700B631EB /* Build configuration list for PBXNativeTarget "geo-monitor-demoTests" */;
+			buildPhases = (
+				58F4A8681C4A28C700B631EB /* Sources */,
+				58F4A8691C4A28C700B631EB /* Frameworks */,
+				58F4A86A1C4A28C700B631EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				58F4A86E1C4A28C700B631EB /* PBXTargetDependency */,
+			);
+			name = "geo-monitor-demoTests";
+			productName = "geo-monitor-demoTests";
+			productReference = 58F4A86C1C4A28C700B631EB /* geo-monitor-demoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		58F4A8481C4A28C700B631EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = bac.fresh;
+				TargetAttributes = {
+					58F4A84F1C4A28C700B631EB = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = VTWUR964WH;
+					};
+					58F4A86B1C4A28C700B631EB = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 58F4A84F1C4A28C700B631EB;
+					};
+				};
+			};
+			buildConfigurationList = 58F4A84B1C4A28C700B631EB /* Build configuration list for PBXProject "geo-monitor-demo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 58F4A8471C4A28C700B631EB;
+			productRefGroup = 58F4A8511C4A28C700B631EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				58F4A84F1C4A28C700B631EB /* geo-monitor-demo */,
+				58F4A86B1C4A28C700B631EB /* geo-monitor-demoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		58F4A84E1C4A28C700B631EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5899E62F1C4D1C2700E03067 /* EqInfoTableView.xib in Resources */,
+				58F4A8661C4A28C700B631EB /* LaunchScreen.storyboard in Resources */,
+				58F4A8631C4A28C700B631EB /* Assets.xcassets in Resources */,
+				5899E6291C4CF6BE00E03067 /* EqMapView.xib in Resources */,
+				5899E6341C4D216500E03067 /* EqInfoTableViewCell.xib in Resources */,
+				58D5B2321C4AA4F100136668 /* EqSummaryTableViewCell.xib in Resources */,
+				58F4A85E1C4A28C700B631EB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58F4A86A1C4A28C700B631EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		69D574460EF2F521729F1F65 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BA56BF2E8BF1F600FEDBB6D5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF9DF4E854EEE06BE1CA0B72 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		58F4A84C1C4A28C700B631EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5899E63A1C4D4EF900E03067 /* GeoJsonMetaData.m in Sources */,
+				58D5B26D1C4BE6FC00136668 /* ColorInterpolator.m in Sources */,
+				58D5B24A1C4ABB4000136668 /* GeoJsonFeatureCollection.m in Sources */,
+				58F4A8951C4A2B9600B631EB /* EqSummaryTableViewController.m in Sources */,
+				58D5B2231C4AA34B00136668 /* Position+CoreDataProperties.m in Sources */,
+				58D5B2241C4AA34B00136668 /* Position.m in Sources */,
+				58D5B2381C4AADEF00136668 /* EqInfoViewController.m in Sources */,
+				58D5B2351C4AADC900136668 /* EqMapViewController.m in Sources */,
+				58D5B24D1C4ABB7200136668 /* GeoJsonUsgsProperties.m in Sources */,
+				58F4A8581C4A28C700B631EB /* AppDelegate.m in Sources */,
+				58F4A8551C4A28C700B631EB /* main.m in Sources */,
+				58D5B2311C4AA4F100136668 /* EqSummaryTableViewCell.m in Sources */,
+				58D5B2611C4B3B0400136668 /* UsgsKeys.m in Sources */,
+				58D5B2471C4ABB1600136668 /* GeoJsonFeature.m in Sources */,
+				58D5B25E1C4B374800136668 /* GeoJsonKeys.m in Sources */,
+				58D5B22B1C4AA46300136668 /* EqDetailViewController.m in Sources */,
+				58D5B2531C4ABBBC00136668 /* GeoJsonGeometry.m in Sources */,
+				58D5B2681C4B439100136668 /* CoreDataManager.m in Sources */,
+				58D5B21D1C4AA30F00136668 /* Earthquake+CoreDataProperties.m in Sources */,
+				58D5B2651C4B41F000136668 /* GeoJsonToManagedObject.m in Sources */,
+				58D5B2281C4AA42900136668 /* UsgsAgent.m in Sources */,
+				58D5B21E1C4AA30F00136668 /* Earthquake.m in Sources */,
+				5899E6371C4D2BFD00E03067 /* LayoutConstraintManager.m in Sources */,
+				5899E62C1C4CFCEE00E03067 /* EqAnnotation.m in Sources */,
+				58F4A8611C4A28C700B631EB /* geo_monitor_demo.xcdatamodeld in Sources */,
+				58D5B2711C4BEFE600136668 /* MagnitudeColorCoder.m in Sources */,
+				5899E6331C4D216500E03067 /* EqInfoTableViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58F4A8681C4A28C700B631EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5824425F1C6C146F00A8AB9A /* UsgsAgentTests.m in Sources */,
+				5824425B1C6BFE4500A8AB9A /* GeoJsonTests.m in Sources */,
+				582442631C6C150400A8AB9A /* MagnitudeColorCoderTests.m in Sources */,
+				582442611C6C14EC00A8AB9A /* EarthquakeTests.m in Sources */,
+				582442671C6C155300A8AB9A /* LayoutConstraintManagerTests.m in Sources */,
+				582442651C6C152100A8AB9A /* ColorInterpolatorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		58F4A86E1C4A28C700B631EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 58F4A84F1C4A28C700B631EB /* geo-monitor-demo */;
+			targetProxy = 58F4A86D1C4A28C700B631EB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		58F4A85C1C4A28C700B631EB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58F4A85D1C4A28C700B631EB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		58F4A8641C4A28C700B631EB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58F4A8651C4A28C700B631EB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		58F4A87E1C4A28C700B631EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		58F4A87F1C4A28C700B631EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		58F4A8811C4A28C700B631EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4075584797D3C62C3E8B2B92 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "geo-monitor-demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "bac.fresh.geo-monitor-demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		58F4A8821C4A28C700B631EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D25E28961525E46C3A94F54 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "geo-monitor-demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "bac.fresh.geo-monitor-demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		58F4A8841C4A28C700B631EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4075584797D3C62C3E8B2B92 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "geo-monitor-demoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "bac.fresh.geo-monitor-demoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/geo-monitor-demo.app/geo-monitor-demo";
+			};
+			name = Debug;
+		};
+		58F4A8851C4A28C700B631EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "geo-monitor-demoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "bac.fresh.geo-monitor-demoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/geo-monitor-demo.app/geo-monitor-demo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		58F4A84B1C4A28C700B631EB /* Build configuration list for PBXProject "geo-monitor-demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58F4A87E1C4A28C700B631EB /* Debug */,
+				58F4A87F1C4A28C700B631EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58F4A8801C4A28C700B631EB /* Build configuration list for PBXNativeTarget "geo-monitor-demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58F4A8811C4A28C700B631EB /* Debug */,
+				58F4A8821C4A28C700B631EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58F4A8831C4A28C700B631EB /* Build configuration list for PBXNativeTarget "geo-monitor-demoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58F4A8841C4A28C700B631EB /* Debug */,
+				58F4A8851C4A28C700B631EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		58F4A85F1C4A28C700B631EB /* geo_monitor_demo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				58F4A8601C4A28C700B631EB /* geo_monitor_demo.xcdatamodel */,
+			);
+			currentVersion = 58F4A8601C4A28C700B631EB /* geo_monitor_demo.xcdatamodel */;
+			path = geo_monitor_demo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 58F4A8481C4A28C700B631EB /* Project object */;
+}
